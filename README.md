@@ -1,5 +1,5 @@
 # smarthome.dietpi
-With an sbc running [https://dietpi.com/](DietPi) execute the following commands.
+With an sbc running [DietPi](https://dietpi.com) execute the following commands.
 
 ## Home Assistant
 ```
