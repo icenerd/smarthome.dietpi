@@ -1,9 +1,14 @@
 # smarthome.dietpi
 With an sbc running [DietPi](https://dietpi.com) execute the following commands.
 
-## Home Assistant
+## Pre
 ```
 sudo usermod -a -G docker dietpi
+```
+
+## Home Assistant
+docker pull homeassistant/home-assistant:2024.3.3
+```
 docker run -d --name homeassistant --privileged --restart=unless-stopped -e TZ=America/Los_Angeles -v /home/dietpi/homeassistant/config:/config --network=host ghcr.io/home-assistant/home-assistant:stable
 ```
 
